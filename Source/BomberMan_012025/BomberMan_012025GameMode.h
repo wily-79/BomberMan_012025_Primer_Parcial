@@ -82,9 +82,12 @@ public:
     float YInicial = 500.00f;
     float AnchoBloque = 100.0f;
     float LargoBloque = 100.0f;
+
+   
     ABloque* BloqueActual = nullptr;
     // Declarar un array de punteros a objetos de tipo BloqueMadera
     TArray<ABloque*> aBloques;
+	TArray<FVector> aposicionesLibres; // posiciones libres para el spawn del personaje
 
     //void SpawnBloques();
     void SpawnBloque(FVector posicion, int32 tipoBloque);
